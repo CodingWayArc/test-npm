@@ -1,0 +1,26 @@
+{
+  "name": "@yogeshsolanki/npm-test-package",
+  "version": "1.0.0",
+  "description": "A simple test package for workflow testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["test", "workflow"],
+  "author": "Yogesh Solanki",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "files": [
+    "index.js",
+    "src/"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
